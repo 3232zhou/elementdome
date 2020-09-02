@@ -1,0 +1,8 @@
+@charset "UTF-8";
+$namespace: "zhou";
+@mixin ns($cls) {
+  $NS: $namespace + $cls;
+  .#{$NS}{
+    @content;
+  }
+}
